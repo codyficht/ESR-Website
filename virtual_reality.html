@@ -4,10 +4,37 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T53KKNL53F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-T53KKNL53F');
+    </script>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Evelyn Sorochan-Ruland</title>
-    <meta name="description" content="Contact information for Evelyn Sorochan-Ruland.">
+    <title>Virtual Exhibition | Evelyn Sorochan-Ruland</title>
+    <meta name="description" content="Unpublished placeholder for a future virtual exhibition by Evelyn Sorochan-Ruland.">
+    <link rel="canonical" href="https://evelynsorochanruland.com/virtual_reality.html">
+    <meta name="author" content="Evelyn Sorochan-Ruland">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Evelyn Sorochan-Ruland">
+    <meta property="og:title" content="Virtual Exhibition | Evelyn Sorochan-Ruland">
+    <meta property="og:description" content="Unpublished placeholder for a future virtual exhibition by Evelyn Sorochan-Ruland.">
+    <meta property="og:url" content="https://evelynsorochanruland.com/virtual_reality.html">
+    <meta property="og:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg">
+    <meta property="og:image:alt" content="Evelyn Sorochan-Ruland in front of her artwork">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Virtual Exhibition | Evelyn Sorochan-Ruland">
+    <meta name="twitter:description" content="Unpublished placeholder for a future virtual exhibition by Evelyn Sorochan-Ruland.">
+    <meta name="twitter:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg">
+    <meta name="twitter:image:alt" content="Evelyn Sorochan-Ruland in front of her artwork">
     <link href="main.css" rel="stylesheet">
     <!-- ****** faviconit.com favicons ****** -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -36,11 +63,62 @@
 <![endif]-->
     <script language="JavaScript" type="text/JavaScript">
 
-        function dropdown() { var x = document.getElementById("innermenu"); var y = document.getElementById("dropbut"); var z = document.getElementById("images"); if (x.className === "") { x.className = "active"; z.className = "active"; y.style = "color:#171717";
-        y.innerHTML = "Artwork −"; sessionStorage.setItem("down", true); } else { x.className = ""; z.className = ""; y.style = "color: #555555"; y.innerHTML = "Artwork +"; sessionStorage.setItem("down", false); } } function resettime() { var x = document.getElementById("innermenu");
-        if (x.className == "active") {} else { cleartime(x); } } var x; function dropfunc() { x = setTimeout(dropdown, 9000); } function cleartime() { try { clearTimeout(x); } catch {} } function setup() { var x = document.getElementById("innermenu");
-        var test = "false"; try { test = sessionStorage.getItem("down"); } catch (err) {} if (test === "true") { x.className = "active"; setTimeout(dropdown, 300); sessionStorage.setItem("down", false); } else { x.className = ""; sessionStorage.setItem("down",
-        false); } }
+        function dropdown() {
+            var x = document.getElementById("innermenu");
+            var y = document.getElementById("dropbut");
+            var z = document.getElementById("images");
+            if (x.className === "") {
+                x.className = "active";
+                z.className = "active";
+                y.style = "color:#171717";
+                y.innerHTML = "Artwork −";
+                sessionStorage.setItem("down", true);
+            } else {
+                x.className = "";
+                z.className = "";
+                y.style = "color: #555555";
+                y.innerHTML = "Artwork +";
+                sessionStorage.setItem("down", false);
+            }
+        }
+
+        function resettime() {
+            var x = document.getElementById("innermenu");
+            if (x.className == "active") {} else {
+                cleartime(x);
+            }
+        }
+        var x;
+
+        function dropfunc() {
+            x = setTimeout(dropdown, 9000);
+        }
+
+        function cleartime() {
+            try {
+                clearTimeout(x);
+            } catch {}
+        }
+
+        function setup() {
+            var x = document.getElementById("innermenu");
+            var z = document.getElementById("images");
+            var test = "false";
+            try {
+                test = sessionStorage.getItem("down");
+            } catch (err) {}
+            if (test === "true") {
+                x.className = "active";
+                z.className = "active";
+                setTimeout(dropdown, 300);
+                sessionStorage.setItem("down", false);
+            } else {
+                x.className = "";
+                z.className = "";
+                sessionStorage.setItem("down",
+                    false);
+            }
+        }
 
     </script>
 </head>
@@ -58,49 +136,43 @@
                         <div id="innermenu">
                             <nav>
                                 <ul>
-                                    <li><a href="recent.html#top">Recent</a></li>
-                                    <li><a href="installations.html#top">Installations</a></li>
-                                    <li><a href="touchline.html#top">Touchline</a></li>
-                                    <li><a href="abstractreliefs.html#top">Abstract Reliefs</a></li>
-                                    <li><a href="paintings.html#top">Paintings</a></li>
+                                    <li><a href="foothold.html#top">Foothold</a> </li>
+                                    <li><a href="groundwork.html#top">Groundwork</a></li>
+                                    <li><a href="reclaim.html#top">Reclaim</a></li>
+									<li><a href="industrial_skins.html#top">Industrial Skins</a></li>
+									<li><a href="touchline.html#top">Touchline</a></li>
+									<li><a href="abstractreliefs.html#top">Abstract Reliefs</a> </li>
+                                    <li><a href="overtake.html#top">Overtake</a></li>
+									<li><a href="anthem.html#top">Anthem</a></li>
+                                    <li><a href="awkward_truce.html#top">Awkward Truce</a></li>
                                 </ul>
                             </nav>
                         </div>
-                        <script language="JavaScript" type="text/JavaScript"> setup(); </script>
                     </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://www.instagram.com/evierenae/?hl=en" target="_blank">Instagram</a></li>
-                    <li class="vr"><a href="virtual_reality.html" style=color:#171717>Virtual Exhibition</a></li>
+                    <li class="vr"><a href="virtual_reality.html">Virtual Exhibition</a></li>
                 </ul>
             </nav>
         </div>
         <div id="top"></div>
         <main>
             <div id="images">
-                <h2 class="titleani">Virtual Reality Exhibition</h2>
+                <script language="JavaScript" type="text/JavaScript"> setup(); </script>
+                <!-- Unpublished placeholder.
+                     To publish: remove the noindex tag, add virtual_reality.html to sitemap.xml,
+                     delete both .vr rules in main.css, and replace this note with the gallery.
+                     Previous prototype: https://glitch.com/embed/#!/embed/evelyn-gallery -->
+                <h2 class="titleani">Virtual Exhibition</h2>
                 <div id="column">
-                    <p>
-                        Built for Oculus virtual reality headsets. Please visit this site using your headset and Oculus Browser.<br>
-                        You may also join with Windows/Mac using Google Chrome or Firefox browsers.
-                        <br>
-                    </p>
-                    <!-- Copy and Paste Me -->
-                    <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-                        <iframe
-                            src="https://glitch.com/embed/#!/embed/evelyn-gallery?path=public/index.html&previewSize=100&attributionHidden=true"
-                            title="evelyn-gallery on Glitch"
-                            allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-                            style="height: 100%; width: 100%; border: 0;">
-                        </iframe>
-                    </div>
+                    <p class="series-intro">This page is not published yet. A virtual exhibition will be added here.</p>
                 </div>
             </div>
         </main>
         <footer>
-            <p id="left-foot"> &copy; Evelyn Sorochan-Ruland - Copyright 2021
-                
+            <p id="left-foot"> &copy; Evelyn Sorochan-Ruland - Copyright 2026</p>
         </footer>
     </body>
 </div>

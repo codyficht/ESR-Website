@@ -17,9 +17,8 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visual Artist | Evelyn Sorochan-Ruland</title>
-    <meta name="description"
-        content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario." />
+    <title>Evelyn Sorochan-Ruland | Visual Artist</title>
+    <meta name="description" content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture." />
     <link href="main.css" rel="stylesheet" />
     <!-- ****** faviconit.com favicons ****** -->
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -43,18 +42,21 @@
     <meta name="msapplication-TileImage" content="/favicon-144.png" />
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <!-- ****** faviconit.com favicons ****** -->
-    <meta property="og:title" content="Evelyn Sorochan-Ruland" />
-    <meta property="og:description"
-        content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario." />
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/codyficht/codyficht.github.io/master/images/portrait/IMG_0545.jpg" />
-    <meta property="og:url" content="http://evelynsorochanruland.com" />
-    <meta name="twitter:title" content="Evelyn Sorochan-Ruland" />
-    <meta name="twitter:description"
-        content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario." />
-    <meta name="twitter:image"
-        content="https://raw.githubusercontent.com/codyficht/codyficht.github.io/master/images/portrait/IMG_0545.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://evelynsorochanruland.com/">
+    <meta name="author" content="Evelyn Sorochan-Ruland">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Evelyn Sorochan-Ruland">
+    <meta property="og:title" content="Evelyn Sorochan-Ruland | Visual Artist">
+    <meta property="og:description" content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture.">
+    <meta property="og:url" content="https://evelynsorochanruland.com/">
+    <meta property="og:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg">
+    <meta property="og:image:alt" content="Evelyn Sorochan-Ruland in front of her artwork">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Evelyn Sorochan-Ruland | Visual Artist">
+    <meta name="twitter:description" content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture.">
+    <meta name="twitter:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg">
+    <meta name="twitter:image:alt" content="Evelyn Sorochan-Ruland in front of her artwork">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -139,6 +141,16 @@
             linkArr[6] = "industrial_skins.html#top";
             linkArr[7] = "abstractreliefs.html#top";
             linkArr[8] = "touchline.html#top";
+            var altArr = new Array();
+            altArr[0] = "Offshoot, mixed media by Evelyn Sorochan-Ruland, from Foothold, 2022";
+            altArr[1] = "Overlay, mixed media by Evelyn Sorochan-Ruland, from Groundwork, 2021";
+            altArr[2] = "Pushback, mixed media by Evelyn Sorochan-Ruland, from Reclaim, 2020";
+            altArr[3] = "Above the Horizontal, mixed media by Evelyn Sorochan-Ruland, from Industrial Skins";
+            altArr[4] = "Crisscross, latex and tile by Evelyn Sorochan-Ruland, from Abstract Reliefs, 2016";
+            altArr[5] = "Twisted Lines, mixed media by Evelyn Sorochan-Ruland, from Abstract Reliefs, 2017";
+            altArr[6] = "Scrum, mixed media by Evelyn Sorochan-Ruland, from Industrial Skins, 2018";
+            altArr[7] = "Skins and Surfaces, mixed media by Evelyn Sorochan-Ruland, from Abstract Reliefs, 2017";
+            altArr[8] = "Touchline I, mixed media by Evelyn Sorochan-Ruland, from Touchline, 2017";
             document.getElementById("links").src = imgArr[num];
             
             
@@ -148,6 +160,7 @@
             function handler() {
                 document.getElementById("links").href = linkArr[num];
                 document.getElementById("homeSlideShow").src = imgArr[num];
+                document.getElementById("homeSlideShow").alt = altArr[num];
                 num = (num + 1) % 9;
                 dot_num = dot_num + 1;
                 if (dot_num === 9) { dot_num = 0 }
@@ -163,6 +176,72 @@
         } 
         
     </script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@graph":  [
+                   {
+                       "@type":  "Person",
+                       "@id":  "https://evelynsorochanruland.com/#person",
+                       "name":  "Evelyn Sorochan-Ruland",
+                       "jobTitle":  "Visual Artist",
+                       "description":  "Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture.",
+                       "url":  "https://evelynsorochanruland.com/",
+                       "image":  "https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg",
+                       "email":  "evelyn_sr@icloud.com",
+                       "address":  {
+                                       "@type":  "PostalAddress",
+                                       "addressLocality":  "Hamilton",
+                                       "addressRegion":  "ON",
+                                       "addressCountry":  "CA"
+                                   },
+                       "alumniOf":  [
+                                        {
+                                            "@type":  "CollegeOrUniversity",
+                                            "name":  "Queen\u0027s University"
+                                        },
+                                        {
+                                            "@type":  "CollegeOrUniversity",
+                                            "name":  "University of Victoria"
+                                        },
+                                        {
+                                            "@type":  "CollegeOrUniversity",
+                                            "name":  "University of Guelph"
+                                        }
+                                    ],
+                       "award":  [
+                                     "Career Catalyst Project Grant, Ontario Arts Council (2022)",
+                                     "Community Arts Investment Program Project Grant (2020)",
+                                     "Jessie Allan Forsyth Scholarship (2017)"
+                                 ],
+                       "sameAs":  [
+                                      "https://www.instagram.com/evierenae/",
+                                      "https://www.linkedin.com/in/evelyn-sorochan-ruland-b775241b1"
+                                  ]
+                   },
+                   {
+                       "@type":  "WebSite",
+                       "@id":  "https://evelynsorochanruland.com/#website",
+                       "url":  "https://evelynsorochanruland.com/",
+                       "name":  "Evelyn Sorochan-Ruland",
+                       "description":  "Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture.",
+                       "inLanguage":  "en-CA",
+                       "publisher":  {
+                                         "@id":  "https://evelynsorochanruland.com/#person"
+                                     }
+                   },
+                   {
+                       "@type":  "ProfilePage",
+                       "@id":  "https://evelynsorochanruland.com/#profile",
+                       "url":  "https://evelynsorochanruland.com/",
+                       "name":  "Evelyn Sorochan-Ruland",
+                       "mainEntity":  {
+                                          "@id":  "https://evelynsorochanruland.com/#person"
+                                      }
+                   }
+               ]
+}
+</script>
 </head>
 <div id="wrap">
 
@@ -206,27 +285,26 @@
         <main>
             <div id="images">
                 <section>
-                    <a id="links" href=""> <img src="" alt="Artist Evelyn Sorochan-Ruland's Artwork" id="homeSlideShow"
+                    <a id="links" href="foothold.html#top"> <img src="images/Homepage/OffshootESR.jpg" alt="Offshoot, mixed media by Evelyn Sorochan-Ruland, from Foothold, 2022" id="homeSlideShow"
                             width="1200" height="798" /> </a>
                     <p></p>
                 </section>
                 <div id="dotContianer" style="text-align:center">
-                    <a class="dot" href="javascript:imageRotate(0)"></a>
-                    <a class="dot" href="javascript:imageRotate(1)"></a>
-                    <a class="dot" href="javascript:imageRotate(2)"></a>
-                    <a class="dot" href="javascript:imageRotate(3)"></a>
-                    <a class="dot" href="javascript:imageRotate(4)"></a>
-                    <a class="dot" href="javascript:imageRotate(5)"></a>
-                    <a class="dot" href="javascript:imageRotate(6)"></a>
-                    <a class="dot" href="javascript:imageRotate(7)"></a>
-                    <a class="dot" href="javascript:imageRotate(8)"></a>
+                    <a class="dot" href="javascript:imageRotate(0)" aria-label="Show Offshoot"></a>
+                    <a class="dot" href="javascript:imageRotate(1)" aria-label="Show Overlay"></a>
+                    <a class="dot" href="javascript:imageRotate(2)" aria-label="Show Pushback"></a>
+                    <a class="dot" href="javascript:imageRotate(3)" aria-label="Show Above the Horizontal"></a>
+                    <a class="dot" href="javascript:imageRotate(4)" aria-label="Show Crisscross"></a>
+                    <a class="dot" href="javascript:imageRotate(5)" aria-label="Show Twisted Lines"></a>
+                    <a class="dot" href="javascript:imageRotate(6)" aria-label="Show Scrum"></a>
+                    <a class="dot" href="javascript:imageRotate(7)" aria-label="Show Skins and Surfaces"></a>
+                    <a class="dot" href="javascript:imageRotate(8)" aria-label="Show Touchline I"></a>
                 </div>
             </div>
         </main>
         <footer>
             <div id="left-foot-image-container">
-                <img id="left-foot-oac" src="images/Homepage/OAC_Logo_RGB.png" alt="Ontario Arts Council Logo"
-                    id="oacHomepage" width="250" height="69" />
+                <img id="left-foot-oac" src="images/Homepage/OAC_Logo_RGB.png" alt="Ontario Arts Council Logo" width="250" height="69" />
             </div>
             <p id="left-foot"> &copy; Evelyn Sorochan-Ruland - Copyright 2026</p>
         </footer>

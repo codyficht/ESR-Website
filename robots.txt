@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://www.evelynsorochanruland.com/sitemap.xml
+Sitemap: https://evelynsorochanruland.com/sitemap.xml

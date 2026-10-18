@@ -1,72 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Homepage -->
   <url>
-    <loc>https://www.evelynsorochanruland.com/</loc>
+    <loc>https://evelynsorochanruland.com/</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>1.00</priority>
   </url>
-
-  <!-- About Page -->
   <url>
-    <loc>https://www.evelynsorochanruland.com/about.html</loc>
+    <loc>https://evelynsorochanruland.com/about.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.80</priority>
   </url>
-
-  <!-- CV Page -->
   <url>
-    <loc>https://www.evelynsorochanruland.com/cv.html</loc>
+    <loc>https://evelynsorochanruland.com/cv.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.80</priority>
   </url>
-
-  <!-- Contact Page -->
   <url>
-    <loc>https://www.evelynsorochanruland.com/contact.html</loc>
+    <loc>https://evelynsorochanruland.com/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.80</priority>
   </url>
-
-  <!-- Artwork Pages -->
   <url>
-    <loc>https://www.evelynsorochanruland.com/foothold.html</loc>
+    <loc>https://evelynsorochanruland.com/foothold.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/groundwork.html</loc>
+    <loc>https://evelynsorochanruland.com/groundwork.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/reclaim.html</loc>
+    <loc>https://evelynsorochanruland.com/reclaim.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/industrial_skins.html</loc>
+    <loc>https://evelynsorochanruland.com/industrial_skins.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/touchline.html</loc>
+    <loc>https://evelynsorochanruland.com/touchline.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/abstractreliefs.html</loc>
+    <loc>https://evelynsorochanruland.com/abstractreliefs.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/overtake.html</loc>
+    <loc>https://evelynsorochanruland.com/overtake.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/anthem.html</loc>
+    <loc>https://evelynsorochanruland.com/anthem.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.evelynsorochanruland.com/awkward_truce.html</loc>
+    <loc>https://evelynsorochanruland.com/awkward_truce.html</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.70</priority>
   </url>
-
-  <!-- Instagram Link -->
-  <url>
-    <loc>https://www.instagram.com/evierenae/?hl=en</loc>
-    <priority>0.50</priority>
-  </url>
-  
 </urlset>
