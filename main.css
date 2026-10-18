@@ -896,6 +896,22 @@ footer a:hover {
         max-width: 100%;
         height: auto;
     }
+    /* Home uses two headings so the name can animate on desktop.
+       On a phone, stack them like the single heading on every other page. */
+    #homeani,
+    #homeanibtm {
+        margin: 0;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+    #homeani {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    #homeanibtm {
+        padding-top: 0;
+        padding-bottom: 28px;
+    }
     #homeanibtm,
     #menu,
     #wrap {
