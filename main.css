@@ -114,6 +114,20 @@ body {
     opacity: 85%;
   }
 
+#topButton.is-hidden {
+    display: none;
+}
+
+#images picture {
+    display: block;
+    max-width: 100%;
+}
+
+#left-foot-image-container picture {
+    display: inline-block;
+    max-width: 100%;
+}
+
 nav {
     text-align: left;
     width: 290px;
@@ -943,6 +957,11 @@ footer a:hover {
     h2 {
         max-width: 100%;
         overflow-wrap: break-word;
+    }
+    /* Keep series intros clear of the fixed Top button on a phone. */
+    #column p.series-intro {
+        box-sizing: border-box;
+        padding-right: 88px;
     }
     #bio table,
     table {

@@ -3,6 +3,7 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T53KKNL53F"></script>
@@ -50,16 +51,13 @@
     <meta property="og:title" content="Evelyn Sorochan-Ruland | Visual Artist">
     <meta property="og:description" content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture.">
     <meta property="og:url" content="https://evelynsorochanruland.com/">
-    <meta property="og:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg">
+    <meta property="og:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545-og.jpg">
     <meta property="og:image:alt" content="Evelyn Sorochan-Ruland in front of her artwork">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Evelyn Sorochan-Ruland | Visual Artist">
     <meta name="twitter:description" content="Evelyn Sorochan-Ruland is an interdisciplinary artist living and working in Hamilton, Ontario. Her work sits between painting and sculpture.">
-    <meta name="twitter:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545.jpg">
+    <meta name="twitter:image" content="https://evelynsorochanruland.com/images/portrait/IMG_0545-og.jpg">
     <meta name="twitter:image:alt" content="Evelyn Sorochan-Ruland in front of her artwork">
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <script language="JavaScript" type="text/JavaScript">
         var imageLoopInterval;
 
@@ -122,8 +120,8 @@
             var dot_num = index - 1;
             var imgArr = new Array();
             var linkArr = new Array();
-            imgArr[0] = 'images/Homepage/OffshootESR.jpg'
-            imgArr[1] = 'images/Homepage/DSC01976.jpg';
+            imgArr[0] = 'images/Homepage/OffshootESR.webp'
+            imgArr[1] = 'images/Homepage/DSC01976.webp';
             imgArr[2] = 'images/Homepage/04ESRPushback.webp';
             imgArr[3] = 'images/Homepage/09installfromfront_landscape.webp';
             imgArr[4] = 'images/Homepage/crisscross copy.webp';
@@ -285,7 +283,7 @@
         <main>
             <div id="images">
                 <section>
-                    <a id="links" href="foothold.html#top"> <img src="images/Homepage/OffshootESR.jpg" alt="Offshoot, mixed media by Evelyn Sorochan-Ruland, from Foothold, 2022" id="homeSlideShow"
+                    <a id="links" href="foothold.html#top"> <img src="images/Homepage/OffshootESR.webp" alt="Offshoot, mixed media by Evelyn Sorochan-Ruland, from Foothold, 2022" id="homeSlideShow"
                             width="1200" height="798" /> </a>
                     <p></p>
                 </section>
@@ -304,7 +302,10 @@
         </main>
         <footer>
             <div id="left-foot-image-container">
-                <img id="left-foot-oac" src="images/Homepage/OAC_Logo_RGB.png" alt="Ontario Arts Council Logo" width="250" height="69" />
+                <picture>
+                    <source type="image/webp" srcset="images/Homepage/OAC_Logo_RGB.webp">
+                    <img id="left-foot-oac" src="images/Homepage/OAC_Logo_RGB.png" alt="Ontario Arts Council Logo" width="250" height="69" />
+                </picture>
             </div>
             <p id="left-foot"> &copy; Evelyn Sorochan-Ruland - Copyright 2026</p>
         </footer>

@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-T53KKNL53F"></script>
@@ -56,9 +57,6 @@
         <meta name="msapplication-TileImage" content="/favicon-144.png">
         <meta name="msapplication-config" content="/browserconfig.xml">
         <!-- ****** faviconit.com favicons ****** -->
-        <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
         <script language="JavaScript" type="text/JavaScript">
             function setupstor() { var x = document.getElementById("innermenu"); var s = "false"; try { s = sessionStorage.getItem("down"); } catch (err) {} if (s === "true") { x.className = "active"; } else { setTimeout(dropdown, 10); } window.sessionStorage.setItem("down",
             true); } function dropdown() { var x = document.getElementById("innermenu"); var y = document.getElementById("dropbut"); var z = document.getElementById("images"); if (x.className === "") { x.className = "active"; z.className = "active"; y.style
@@ -207,43 +205,85 @@
                     <h2 class="titleani">Foothold</h2>
                     <div id="column">
                         <p class="series-intro">Foothold is a 2022 solo exhibition of mixed media by Evelyn Sorochan-Ruland at Gallery Stratford in Stratford, Ontario.</p>
-                        <img alt="Evelyn Sorochan-Ruland's Offshoot Art" src="images/Foothold/OffshootESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/OffshootESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Offshoot Art" src="images/Foothold/OffshootESR.jpg" width="1600" height="1069"/>
+                        </picture>
                         <h3>Offshoot</h3>
                         <p>Mixed media, 4' x 2', 2022. </p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Trail Off Art" src="images/Foothold/TrailOffESR.jpg" width="1600" height="2396"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/TrailOffESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Trail Off Art" src="images/Foothold/TrailOffESR.jpg" width="1351" height="2000" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Trail Off</h3>
                         <p>Mixed media, 16" x 12", 2022.</p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Interlace Art" src="images/Foothold/InterlaceESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/InterlaceESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Interlace Art" src="images/Foothold/InterlaceESR.jpg" width="1600" height="1069" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Interlace</h3>
                         <p>Mixed media, 16" x 12", 2022. </p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Broken Art" src="images/Foothold/BrokenInstallationESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/BrokenInstallationESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Broken Art" src="images/Foothold/BrokenInstallationESR.jpg" width="1600" height="1069" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Broken</h3>
                         <p>Mixed media, dimensions may vary, 2021. </p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Changeover Art" src="images/Foothold/ChangeoverESR.jpg" width="1600" height="2396"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/ChangeoverESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Changeover Art" src="images/Foothold/ChangeoverESR.jpg" width="1335" height="2000" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Changeover</h3>
                         <p>Mixed media, dimensions may vary, 2022.</p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Bent Art" src="images/Foothold/BentESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/BentESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Bent Art" src="images/Foothold/BentESR.jpg" width="1600" height="1069" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Bent</h3>
                         <p>Mixed media, 36" x 23", 2021.</p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Bent Art" src="images/Foothold/BentInstallationESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/BentInstallationESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Bent Art" src="images/Foothold/BentInstallationESR.jpg" width="1600" height="1069" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Bent</h3>
                         <p>Detail, Mixed media, 36" x 23", 2021.</p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Traced Art" src="images/Foothold/TracedAllESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/TracedAllESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Traced Art" src="images/Foothold/TracedAllESR.jpg" width="1600" height="1060" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Traced</h3>
                         <p>Mixed media, dimensions may vary, 2022.</p> 
                         
-                        <img alt="Evelyn Sorochan-Ruland's Traced Art" src="images/Foothold/TracedESR.jpg" width="1600" height="1069"/>
+                        <picture>
+                            <source type="image/webp" srcset="images/Foothold/TracedESR.webp">
+                            <img alt="Evelyn Sorochan-Ruland's Traced Art" src="images/Foothold/TracedESR.jpg" width="1600" height="1057" loading="lazy" decoding="async"/>
+                        </picture>
                         <h3>Traced</h3>
                         <p>Mixed media, dimensions may vary, 2022.</p>
                     </div>
-                    <a id="topButton" href="#top">Top</a>
+                    <a id="topButton" class="is-hidden" href="#top">Top</a>
+                    <script language="JavaScript" type="text/JavaScript">
+                        function toggleTopButton() {
+                            var button = document.getElementById("topButton");
+                            if (!button) {
+                                return;
+                            }
+                            if (window.pageYOffset > 150) {
+                                button.classList.remove("is-hidden");
+                            } else {
+                                button.classList.add("is-hidden");
+                            }
+                        }
+                        toggleTopButton();
+                        window.addEventListener("scroll", toggleTopButton);
+                    </script>
                 </div>
             </main>
             <footer>

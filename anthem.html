@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-T53KKNL53F"></script>
@@ -56,9 +57,6 @@
         <meta name="msapplication-TileImage" content="/favicon-144.png">
         <meta name="msapplication-config" content="/browserconfig.xml">
         <!-- ****** faviconit.com favicons ****** -->
-        <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
         <script language="JavaScript" type="text/JavaScript">
             function setupstor() { var x = document.getElementById("innermenu"); var s = "false"; try { s = sessionStorage.getItem("down"); } catch (err) {} if (s === "true") { x.className = "active"; } else { setTimeout(dropdown, 10); } window.sessionStorage.setItem("down",
             true); } function dropdown() { var x = document.getElementById("innermenu"); var y = document.getElementById("dropbut"); var z = document.getElementById("images"); if (x.className === "") { x.className = "active"; z.className = "active"; y.style
@@ -185,19 +183,34 @@
                         <p class="series-intro">Anthem includes paintings and mixed media from 2014 to 2017 by Evelyn Sorochan-Ruland. Anthem was exhibited at Project Space Gallery, Boarding House, Guelph, in 2015.</p> 
                         <img alt="Evelyn Sorochan-Ruland's Burrow Art" src="images/paintings/77Popen%20right%20view.webp" width="1153" height="1080"/>
                         <h3>Burrow</h3>
-                        <p>MDF, acrylic, and oil paint, dimensions may vary, 2017.</p> <img alt="Evelyn Sorochan-Ruland's Burrow Art" src="images/paintings/81Popencenter.webp" width="1219" height="1080"/>
+                        <p>MDF, acrylic, and oil paint, dimensions may vary, 2017.</p> <img loading="lazy" decoding="async" alt="Evelyn Sorochan-Ruland's Burrow Art" src="images/paintings/81Popencenter.webp" width="1219" height="1080"/>
                         <h3>Burrow</h3>
-                        <p>MDF, acrylic, and oil paint, dimensions may vary, 2017.</p> <img alt="Evelyn Sorochan-Ruland's Spruced Up Art" src="images/paintings/09EvelynSorochan-Ruland_SprucedUp_60_x54__AcrylicAndOil_2015.webp" width="704" height="768"/>
+                        <p>MDF, acrylic, and oil paint, dimensions may vary, 2017.</p> <img loading="lazy" decoding="async" alt="Evelyn Sorochan-Ruland's Spruced Up Art" src="images/paintings/09EvelynSorochan-Ruland_SprucedUp_60_x54__AcrylicAndOil_2015.webp" width="704" height="768"/>
                         <h3>Spruced Up</h3>
-                        <p>Acrylic and oil paint, 60” x 54”, 2015.</p> <img alt="Evelyn Sorochan-Ruland's Accident At The Diner Art" src="images/paintings/08EveynSorochan-Ruland_AccidentAtTheDiner_54_x48__OilPaint_2015.webp" width="693" height="768"/>
+                        <p>Acrylic and oil paint, 60” x 54”, 2015.</p> <img loading="lazy" decoding="async" alt="Evelyn Sorochan-Ruland's Accident At The Diner Art" src="images/paintings/08EveynSorochan-Ruland_AccidentAtTheDiner_54_x48__OilPaint_2015.webp" width="693" height="768"/>
                         <h3>Accident At The Diner</h3>
-                        <p>Oil paint, 54” x 58”, 2015.</p> <img alt="Evelyn Sorochan-Ruland's The Cell Art" src="images/paintings/07EvelynSorochan-Ruland_TheCell_54_x48__AcrylicAndOilPaint_2014.webp" width="655" height="768"/>
+                        <p>Oil paint, 54” x 58”, 2015.</p> <img loading="lazy" decoding="async" alt="Evelyn Sorochan-Ruland's The Cell Art" src="images/paintings/07EvelynSorochan-Ruland_TheCell_54_x48__AcrylicAndOilPaint_2014.webp" width="655" height="768"/>
                         <h3>The Cell</h3>
-                        <p>Acrylic and oil paint, 54” x 48”, 2014.</p> <img alt="Evelyn Sorochan-Ruland's Standpoint Art" src="images/paintings/06EvelynSorochan-Ruland_DivergentBlues48_x54__OilPaintAndLatex_2014.webp" width="779" height="653"/>
+                        <p>Acrylic and oil paint, 54” x 48”, 2014.</p> <img loading="lazy" decoding="async" alt="Evelyn Sorochan-Ruland's Standpoint Art" src="images/paintings/06EvelynSorochan-Ruland_DivergentBlues48_x54__OilPaintAndLatex_2014.webp" width="779" height="653"/>
                         <h3>Standpoint</h3>
                         <p>Acrylic, oil paint, and latex, 48” x 54”, 2014.</p>
                     </div>
-                    <a id="topButton" href="#top">Top</a>
+                    <a id="topButton" class="is-hidden" href="#top">Top</a>
+                    <script language="JavaScript" type="text/JavaScript">
+                        function toggleTopButton() {
+                            var button = document.getElementById("topButton");
+                            if (!button) {
+                                return;
+                            }
+                            if (window.pageYOffset > 150) {
+                                button.classList.remove("is-hidden");
+                            } else {
+                                button.classList.add("is-hidden");
+                            }
+                        }
+                        toggleTopButton();
+                        window.addEventListener("scroll", toggleTopButton);
+                    </script>
                 </div>
             </main>
             <footer>
